@@ -10,7 +10,7 @@ window.addEventListener("load", function(){
                         <h3>${json[i].firstName} ${json[i].lastName}</h3>
                         <ul>
                             <li>Hours in space: ${json[i].hoursInSpace}</li>
-                            <li id="color">Active: ${json[i].active}</li>
+                            <li id="color" style="color: black;">Active: ${json[i].active}</li>
                             <li>Skills: ${json[i].skills}</li>
                         </ul>
                     </div>
@@ -18,10 +18,10 @@ window.addEventListener("load", function(){
                 </div>
                 `;
                 if (json[i].active){
-                    //document.getElementById("color").style.color = "green";
+                    document.getElementById("color").style.color = "green";
                     //let activeColor = document.querySelector(".color");
                    // activeColor.style.color = "green";
-                    console.log("looking for color class");
+                    console.log("looking for color class", json[i].firstName);
                     //console.log("?", activeColor.style.color);
                 }
                 //if active then active:true = green or something
